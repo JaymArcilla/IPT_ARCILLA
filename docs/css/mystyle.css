@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    overflow-x: hidden; 
+    width: 100%; 
+}
+nav {
+    background-color: #333;
+    width: 100%;
+    padding: 20px 0; /* Thicker navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 30px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; 
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    text-align: center;
+    margin-top: 100px; 
+}
+
+#about-page {
+    margin-top: 50px; 
+}
+
+/* ABOUT ME PAGE */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto; /* Center the section horizontally */
+    margin-top: 100px; /* Add space above the section */
+    max-width: 800px; /* Limit the width of the section */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 150px; /* Set a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .about-image {
+        margin-top: 20px; /* Add some space above the image */
+    }
+}
+
+/*CONTACT PAGE*/
+#contact-container {
+    max-width: 800px; /* Limit the width of the container */
+    margin: 100px auto; /* Center the container and add space from the navbar */
+    padding: 20px; /* Add padding inside the container */
+    background-color: #f8f9fa; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+    font-family: Arial, sans-serif; /* Change font family for the heading */
+    color: #333; /* Darker text color for better readability */
+}
+
+.contact-item {
+    transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+.contact-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the icon on hover */
+}
+
+i {
+    color: #007bff; /* Bootstrap primary color for icons */
+}
+
+p a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Bootstrap primary color for links */
+}
+
+p a:hover {
+    text-decoration: underline; /* Underline links on hover */
+    color: #0056b3; /* Darker shade on hover */
+}
+
+/* PROJECT PAGE */
+.myproject-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 40px; /* Increased margin to create more space from the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.myproject-about-me {
+    margin-bottom: 20px;
+}
+
+.myproject-logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+/* LANGUAGE PAGE */
+.myproject-content-container {
+    max-width: 800px;
+    margin: 40px auto; /* Center the container with margin */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 100px; /* Added margin to create space from the navbar */
+}
+
+.myproject-title {
+    margin-bottom: 20px;
+    font-size: 24px; /* Adjust the title size */
+}
+
+.myproject-description {
+    line-height: 1.6; /* Improve readability */
+    font-size: 16px; /* Adjust the description size */
+    color: #555; /* Slightly lighter color for description */
+}
